@@ -1,0 +1,150 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+.carousel__images {
+    display: none;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-animation: slide 250ms ease-in-out;
+            animation: slide 250ms ease-in-out;
+}
+
+.carousel__track-container{
+    /* background: lightgreen; */
+    height: auto;
+    overflow: hidden;
+}
+
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+}
+
+/* .carousel__slide {
+    width: 100%;
+    height: 100%;
+} */
+.description-track{
+    display: none;
+}
+.current-slide img, .current-slide{
+    display: block;
+}
+
+.carousel__button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10%;
+    outline: none;
+    margin: auto;
+}
+
+.carousel__button--left {
+    /* left: -40px; */
+    background: rgba(0,0,0, .3);
+    font-size: 2rem;
+}
+.carousel__button--right {
+    /* right: -40px; */
+    background: rgba(0,0,0, .3);
+    font-size: 2rem;
+    /* outline: none; */
+}
+
+.carousel__button img {
+    width: 12px;
+}
+
+.carousel__nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0, .3);
+    margin: 0 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.carousel__indicator.current-slide {
+    background: rgba(0,0,0, .75);
+}
+
+.is-hidden {
+    visibility: hidden;
+}
+
+.carousel__description-container {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.carousel__paragraph{
+    display: none;
+}
+.carousel__paragraph.current-slide{
+    display: block;
+}
+
+@-webkit-keyframes slide{
+    from{
+        -webkit-transform: translateY(-25px);
+                transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide{
+    from{
+        -webkit-transform: translateY(-25px);
+                transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}
