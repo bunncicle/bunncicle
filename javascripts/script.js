@@ -109,32 +109,32 @@ modalWindows.forEach(element => {
     })
 });
 
-document.getElementById('contactForm').addEventListener('submit', e => {
-    e.preventDefault();
+// document.getElementById('contactForm').addEventListener('submit', e => {
+//     e.preventDefault();
 
-    let fname = document.querySelector('#fname').value;
-    let lname = document.querySelector('#lname').value;
-    let company = document.querySelector('#company').value;
-    let email = document.querySelector('#email').value;
-    let subject = document.querySelector('#subject').value;
-    let captcha = document.querySelector('#g-recaptcha-response').value;
+//     let fname = document.querySelector('#fname').value;
+//     let lname = document.querySelector('#lname').value;
+//     let company = document.querySelector('#company').value;
+//     let email = document.querySelector('#email').value;
+//     let subject = document.querySelector('#subject').value;
+//     let captcha = document.querySelector('#g-recaptcha-response').value;
     
-    if(fname && lname && company && email && subject && captcha){
-        document.querySelector('.success').style = "display: block; animation:;"
-        document.querySelector('.failure').style = "display: none;"
-    }
-    else if(!fname || !lname || !company || !email || !subject || !captcha){
-        document.querySelector('.failure').style = "display: block; animation:;"
-    }
+//     if(fname && lname && company && email && subject && captcha){
+//         document.querySelector('.success').style = "display: block; animation:;"
+//         document.querySelector('.failure').style = "display: none;"
+//     }
+//     else if(!fname || !lname || !company || !email || !subject || !captcha){
+//         document.querySelector('.failure').style = "display: block; animation:;"
+//     }
 
-    return fetch('', {
-      method: 'POST',
-      headers: { 'Content-type': 'application/json' },
-      body: JSON.stringify({ fname, lname, company, email, subject, captcha })
-    })
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        if(data.success) return location.reload();
-      })
-  });
+//     return fetch('', {
+//       method: 'POST',
+//       headers: { 'Content-type': 'application/json' },
+//       body: JSON.stringify({ fname, lname, company, email, subject, captcha })
+//     })
+//       .then(res => res.json())
+//       .then(data => {
+//         console.log(data);
+//         if(data.success) return location.reload();
+//       })
+//   });
