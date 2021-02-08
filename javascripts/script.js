@@ -14,6 +14,7 @@ const modalSix = document.querySelector('#modal-6-window')
 const modalSeven = document.querySelector('#modal-7-window')
 const modalEight = document.querySelector('#modal-8-window')
 const modalNine = document.querySelector('#modal-9-window')
+const modalTen = document.querySelector('#modal-10-window')
 
 // Open Select window on click.
 modalOpeners.forEach(element => {
@@ -49,6 +50,8 @@ modalOpeners.forEach(element => {
                 break
             case 'modal-9':
                 openWindow(modalNine)
+            case 'modal-10':
+                openWindow(modalTen)
             default:
                 break
         }

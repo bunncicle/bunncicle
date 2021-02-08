@@ -22,7 +22,7 @@
 .modal h2{
   border-bottom: thin #0A0A0B solid;
 }
-#modal-1-window, #modal-2-window, #modal-3-window, #modal-4-window, #modal-5-window, #modal-6-window, #modal-7-window, #modal-8-window, #modal-9-window, #contact-form {
+#modal-1-window, #modal-2-window, #modal-3-window, #modal-4-window, #modal-5-window, #modal-6-window, #modal-7-window, #modal-8-window, #modal-9-window, #modal-10-window, #contact-form {
   -webkit-animation: form-in 0.4s ease-out;
           animation: form-in 0.4s ease-out;
   display: none;
@@ -214,10 +214,9 @@ input[type=submit]:hover {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-/* .positions a{
-  float: right;
-  clear: both; 
-} */
+.positions a{
+  width: 100%;
+}
 
 @media(max-width:780px){
   .modalContent{
