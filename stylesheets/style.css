@@ -103,6 +103,16 @@ a {
   padding-left: 0;
   padding-left: 15px;
 }
+.section-body figure {
+  padding: 0;
+  margin: 0;
+}
+.section-body figure figcaption {
+  font-size: .9rem;
+}
+.section-body figure img{
+  max-width: 100%;
+}
 
 /* animations / utilities */
 .grid-2 a:hover{
