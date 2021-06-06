@@ -37,6 +37,10 @@ a {
   padding-left: 18vw;
 }
 
+.no-steal{
+  pointer-events: none;
+}
+
 /* Section Head */
 .section-head {
   text-align: center;
